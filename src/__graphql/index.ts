@@ -19,13 +19,6 @@ export class UpdatePost {
     isPublished?: Nullable<boolean>;
 }
 
-export class Post {
-    id: string;
-    title: string;
-    text: string;
-    isPublished: boolean;
-}
-
 export abstract class IQuery {
     abstract posts(): Post[] | Promise<Post[]>;
 
@@ -42,6 +35,13 @@ export abstract class IMutation {
 
 export abstract class ISubscription {
     abstract postCreated(): Nullable<Post> | Promise<Nullable<Post>>;
+}
+
+export class Post {
+    id: string;
+    title: string;
+    text: string;
+    isPublished: boolean;
 }
 
 type Nullable<T> = T | null;
