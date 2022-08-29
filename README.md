@@ -6,8 +6,7 @@ This sample project uses sqlite as the relational database. To use a different d
 
 1. Install dependencies: `npm install`
 2. Generate TypeScript type definitions for the GraphQL schema: `npm run generate:typings`
-3. Create sqlite database and create tables: `npx prisma db push`
-4. Start server: `npm run start:dev`
+3. Start server: `npm run start:dev`
 
 ### Graphql Playground
 
